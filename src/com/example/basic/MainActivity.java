@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
 @SuppressLint("NewApi") public class MainActivity extends ActionBarActivity {
 	Button mbutton;
 	EditText medit;
@@ -26,7 +27,7 @@ import android.widget.EditText;
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				medit = (EditText)findViewById(R.id.editText1);
+				//medit = (EditText)findViewById(R.id.editText1);
 				Intent mintent = new Intent(MainActivity.this,l2.class);
 				startActivity(mintent);
 				
