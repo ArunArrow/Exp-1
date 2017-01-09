@@ -1,17 +1,37 @@
 package com.example.basic;
 
 import android.support.v7.app.ActionBarActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
-
-public class MainActivity extends ActionBarActivity {
+@SuppressLint("NewApi") public class MainActivity extends ActionBarActivity {
+	Button mbutton;
+	EditText medit;
+	Intent mintent;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mbutton = (Button)findViewById(R.id.button1);
+        mbutton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				medit = (EditText)findViewById(R.id.editText1);
+				Intent mintent = new Intent(MainActivity.this,l2.class);
+				startActivity(mintent);
+				
+			}
+		});
     }
 
     @Override
