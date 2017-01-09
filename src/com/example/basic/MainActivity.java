@@ -27,7 +27,8 @@ import android.widget.EditText;
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				//medit = (EditText)findViewById(R.id.editText1);
+				medit = (EditText)findViewById(R.id.editText1);
+				String text = medit.getText().toString();
 				Intent mintent = new Intent(MainActivity.this,l2.class);
 				startActivity(mintent);
 				
